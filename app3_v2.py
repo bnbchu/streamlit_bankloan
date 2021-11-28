@@ -6,7 +6,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
-import pyautogui # for reset button: pip install pyautogui
+# import pyautogui # for reset button: pip install pyautogui
 
 # load the model.pkl
 path = r'D:\work\courses\SI-Solution Implementation\SI\code\streamlit\app3\model.pkl'
@@ -71,8 +71,8 @@ def main():
 		assessment = prediction(int_rate, emp_length, annual_inc, delinq_2yrs, fico_range_high,revol_bal, open_acc)
 		st.success('**System assessment says:** {}'.format(assessment))
 
-	if st.button("Reset"):
-		pyautogui.hotkey("ctrl","F5")
+	# if st.button("Reset"):
+	# 	pyautogui.hotkey("ctrl","F5")
 
 	# st.balloons()
 	st.success("App is working!!") # other tags include st.error, st.warning, st.help etc.

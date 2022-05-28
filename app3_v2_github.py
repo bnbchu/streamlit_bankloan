@@ -3,8 +3,6 @@
 
 import streamlit as st
 # other libs
-import numpy as np
-import pandas as pd
 import pickle
 # import pyautogui # for reset button: pip install pyautogui
 
